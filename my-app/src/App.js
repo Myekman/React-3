@@ -12,20 +12,29 @@ import ContentHooks from './components/ContentHooks';
 import HTTPRequest from './components/HTTPRequest';
 import HTTPPost from './components/HTTPPost';
 import HTTPHooks from './components/HTTPHooks';
+import Content from './components/Content';
+import ContentAPI from './components/ContentAPI';
 
 function App() {
   return <div className="App">
-    <HTTPHooks/>
+    {/* <Content/> */}
+    <ContentAPI/>
+
+    {/* <HTTPHooks/> */}
     {/* <HTTPPost/> */}
     {/* <HTTPRequest/> */}
     {/* <ContentHooks/> */}
+
     {/* <ClassCounter/>
     <HooksCounter/>
+
     <ControlledForm/>
     <ControlledFormHooks/>
+
     <UseStateWithArrays/>
     <UseStateWithObjects/>
     <UseEffectCounterContainer/> */}
+
     {/* <StatefulGreeting greeting="im a stateful class component"/> */}
   </div>;
    
