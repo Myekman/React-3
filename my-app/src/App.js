@@ -9,10 +9,12 @@ import UseStateWithObjects from './components/UseStateWithObjects';
 import UseEffectCounterContainer from './components/UseEffectCounterContainer';
 import StatefulGreeting from './components/StatefulGreeting';
 import ContentHooks from './components/ContentHooks';
+import HTTPRequest from './components/HTTPRequest';
 
 function App() {
   return <div className="App">
-    <ContentHooks/>
+    <HTTPRequest/>
+    {/* <ContentHooks/> */}
     {/* <ClassCounter/>
     <HooksCounter/>
     <ControlledForm/>

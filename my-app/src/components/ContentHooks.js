@@ -4,6 +4,7 @@ import PostItem from "./PostItem";
 import css from "../css/Content.module.css";
 import Loader from "./Loader";
 
+
 function ContentHooks() {
     const [isLoaded, setIsLoaded] = useState(false);
     const [fetchedPosts, setFetchedPosts] = useState([]);
