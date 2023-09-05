@@ -10,10 +10,14 @@ import UseEffectCounterContainer from './components/UseEffectCounterContainer';
 import StatefulGreeting from './components/StatefulGreeting';
 import ContentHooks from './components/ContentHooks';
 import HTTPRequest from './components/HTTPRequest';
+import HTTPPost from './components/HTTPPost';
+import HTTPHooks from './components/HTTPHooks';
 
 function App() {
   return <div className="App">
-    <HTTPRequest/>
+    <HTTPHooks/>
+    {/* <HTTPPost/> */}
+    {/* <HTTPRequest/> */}
     {/* <ContentHooks/> */}
     {/* <ClassCounter/>
     <HooksCounter/>
