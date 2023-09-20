@@ -15,17 +15,37 @@ import HTTPHooks from './components/HTTPHooks';
 import Content from './components/Content';
 import ContentAPI from './components/ContentAPI';
 
+import Exercizes from './components/exercizes';
+
+const dishes = [
+  "Köttbullar",
+  "Sallad",
+  "Fisksoppa",
+  "pizza"
+];
+const dish0bjects = dishes.map((dish, i) => ({
+  id: i,
+  title: dish
+}))
+
 function App() {
   return <div className="App">
     {/* <Content/> */}
-    <ContentAPI/>
 
-    {/* <HTTPHooks/> */}
-    {/* <HTTPPost/> */}
-    {/* <HTTPRequest/> */}
-    {/* <ContentHooks/> */}
+    {/* -----------------------------------the images app below */}
+    {/* <ContentAPI/> */}
 
-    {/* <ClassCounter/>
+    <Exercizes 
+      year={new Date().getFullYear()}
+      dishes = {dish0bjects}
+    />
+
+    {/* <HTTPHooks/>  */}
+    {/* <HTTPPost/>
+    <HTTPRequest/>
+   <ContentHooks/>
+
+    <ClassCounter/>
     <HooksCounter/>
 
     <ControlledForm/>
